@@ -1,49 +1,41 @@
-import List, { Car, Garage } from './basic/List'
-import { GarageSecond } from './basic/Objects'
+import { FaCalendarAlt, FaDoorOpen, FaUsers } from "react-icons/fa";
+import { BrowserRouter, Link } from "react-router-dom";
+import UserPicker from "./component/Users/UserPicker";
+import './App.css';
+
 function App() {
-  
   return (
-    
-    <>
-      <div>
-        <p>싹다지움 ㅅㄱ</p>
-        <NewComponent></NewComponent>
+    <BrowserRouter>
+      <div className="App">
+        <header>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/bookings" className="btn btn-header">
+                  <FaCalendarAlt />
+                  <span>예약</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/bookables" className="btn btn-header">
+                  <FaDoorOpen />
+                  <span>예약자원</span>
+                </Link>
+              </li>
+              <li>
+                <Link to="/users" className="btn btn-header">
+                  <FaUsers />
+                  <span>사용자</span>
+                </Link>
+              </li>
+            </ul>
+          </nav>
+
+          <UserPicker />
+        </header>
       </div>
-
-      <Modal></Modal>
-      <List />
-      <Car brand="소나타"/>
-      <Garage></Garage>
-
-
-      <GarageSecond></GarageSecond>
-    
-      
-
-    </>
-
-  )
+    </BrowserRouter>
+  );
 }
 
-function NewComponent(){
-  return(
-    <>
-    from the virtual dom, it leads the race,
-    renders like rubes, leaving rivals in shame,
-    State and Props. It handles with ease
-    My grandma can code in a moment of breeeeze;
-    </>
-  )
-}
-
-function Modal(){
-  return (
-    <div className="modal">
-      <h4>제목</h4>
-      <p>날짜</p>
-      <p>상세내용</p>
-    </div>
-  )
-}
-
-export default App
+export default App;
