@@ -37,8 +37,8 @@ function App() {
           <UserPicker />
         </header>
         <Routes>
-          <Route path="/bookings" element={BookingsPage}/>
-          <Route path="/bookables" element={BookablePage}/>
+          <Route path="/bookings" element={<BookingsPage />} />
+          <Route path="/bookables" element={<BookablePage />} />
           <Route path="/users" element={<UsersPage></UsersPage>}/>
         </Routes>
       </div>
