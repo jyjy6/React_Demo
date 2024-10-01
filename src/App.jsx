@@ -1,6 +1,9 @@
-
+import List, { Car, Garage } from './basic/List'
+import { GarageSecond } from './basic/Objects'
 function App() {
+  
   return (
+    
     <>
       <div>
         <p>싹다지움 ㅅㄱ</p>
@@ -8,10 +11,16 @@ function App() {
       </div>
 
       <Modal></Modal>
+      <List />
+      <Car brand="소나타"/>
+      <Garage></Garage>
 
+
+      <GarageSecond></GarageSecond>
+    
+      
 
     </>
-
 
   )
 }
