@@ -30,12 +30,7 @@ export function Garage(){
 
         })}
       </ul>
-      <ul>
-        {cars.forEach((car, i)=>{
-          return <Car key={i} brand={car}></Car>
 
-        })}
-      </ul>
     </>
   )
 

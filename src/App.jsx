@@ -39,7 +39,7 @@ function App() {
         <Routes>
           <Route path="/bookings" element={<BookingsPage />} />
           <Route path="/bookables" element={<BookablePage />} />
-          <Route path="/users" element={<UsersPage></UsersPage>}/>
+          <Route path="/users" element={<UsersPage />}/>
         </Routes>
       </div>
     </BrowserRouter>
