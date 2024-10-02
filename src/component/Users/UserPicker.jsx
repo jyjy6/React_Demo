@@ -1,4 +1,3 @@
-import UsersPage from "./UsersPage";
 
 function UserPicker(){
   return(
