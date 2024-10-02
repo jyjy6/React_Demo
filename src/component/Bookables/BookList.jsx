@@ -11,7 +11,6 @@ function BookList() {
 
   const [state, dispatch] = useReducer(reducer, initState);
   const { group, bookableIndex, hasDetails } = state;
-
   const bookableGroup = bookables.filter((b) => b.group === group);
 
   function nextBookableIndex() {
@@ -43,6 +42,7 @@ function BookList() {
 
   const groups = Array.from(new Set(bookables.map((item) => item.group)));
   const bookable = bookableGroup[bookableIndex];
+
 
   return (
     <>
